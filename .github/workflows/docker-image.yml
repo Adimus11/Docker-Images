@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  create redis image:
+  create_redis_image:
 
     runs-on: ubuntu-latest
 
@@ -41,7 +41,7 @@ jobs:
         push: true
         file: ./golang/Dockerfile
         
-  create golang image:
+  create_golang_image:
 
     runs-on: ubuntu-latest
 
