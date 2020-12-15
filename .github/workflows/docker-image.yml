@@ -27,7 +27,7 @@ jobs:
         context: . 
         tags: |
           adimus11/test-redis-repo:${{steps.vars.outputs.tag}}
-          adimus11/test-redis-repo:$lates 
+          adimus11/test-redis-repo:latest
         push: true
         file: ./redis/Dockerfile 
     - name: Push golang image to docker hub
@@ -36,6 +36,6 @@ jobs:
         context: .
         tags: |
           adimus11/test-golang-repo:${{steps.vars.outputs.tag}}
-          adimus11/test-golang-repo:$lates
+          adimus11/test-golang-repo:latest
         push: true
         file: ./golang/Dockerfile
